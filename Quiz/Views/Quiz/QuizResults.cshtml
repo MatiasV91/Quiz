@@ -1,0 +1,5 @@
+﻿@model int
+
+<h2>You answered correctly @Model/10 </h2>
+<a class="btn btn-info btn-lg btn-block" asp-action="Index" asp-controller="Quiz" asp-route-reviewResult="true">Check Answers</a>
+<a class="btn btn-info btn-lg btn-block" asp-action="Index" asp-controller="Quiz" asp-route-reviewResult="false">Do Another One</a>

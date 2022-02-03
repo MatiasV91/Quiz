@@ -1,0 +1,23 @@
+﻿@model Question
+
+
+<form asp-action="Questions" asp-controller="Quiz" method="post">
+    <h2 id="question">@Html.Raw(Model.Text)</h2>
+    <ul>
+        @{
+            foreach (var option in Model.Options)
+            {
+                <li>
+                    <input id="@option.Id" type="radio" name="id" value="@option.Id" @(option.WasSelected || option.Id == 0 ? "checked" : "") />
+                    
+                    <label for="@option.Id">@Html.Raw(option.Text)
+                    @(ViewBag.IsFinished && option.IsCorrect ? "✔️" : "")
+                    @(ViewBag.IsFinished && !option.IsCorrect && option.WasSelected ? "❌" : "")
+                    
+                    </label> 
+                </li>
+            }
+        }
+    </ul>
+    <button class="btn btn-info btn-lg btn-block" type="submit">@(ViewBag.IsFinished ? "Next One" : "Submit")</button>
+</form>
