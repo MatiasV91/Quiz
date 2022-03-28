@@ -1,5 +1,6 @@
-Asp .Net Core Quiz app 
+Quiz app 
 
+Utiliza C# y Asp .Net Core 5
 
 Utiliza  "The Open Trivia Database" API para mostrar 10 trivias, mostrando el resultado al final y permitiendo ver las respuestas correctas.
 
