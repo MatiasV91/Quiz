@@ -1,6 +1,6 @@
 # Quiz app 
 
-Hecho con C# y Asp .Net Core 5
+Hecho con C# y Asp .Net Core 3.1
 
 Utiliza  "The Open Trivia Database" API para mostrar 10 trivias, mostrando el resultado al final y permitiendo ver las respuestas correctas.
 
